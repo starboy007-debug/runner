@@ -206,6 +206,7 @@ GameObject:
   - component: {fileID: 8143288655791944186}
   - component: {fileID: 8143288655790945210}
   - component: {fileID: 8143288655786640134}
+  - component: {fileID: 5897849896976048465}
   m_Layer: 0
   m_Name: road1
   m_TagString: Untagged
@@ -222,7 +223,7 @@ Transform:
   m_GameObject: {fileID: 8143288655788747782}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: -14, z: -0.000020619}
-  m_LocalScale: {x: 1, y: 10, z: 1}
+  m_LocalScale: {x: 0.85, y: 1, z: 1}
   m_Children:
   - {fileID: 8143288655789044184}
   - {fileID: 8143288655789044186}
@@ -334,6 +335,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300022, guid: 743b5a36add64654a83f60be2beee9f1, type: 3}
+--- !u!65 &5897849896976048465
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8143288655788747782}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 14.999967, y: 59.999767, z: 1.8210311}
+  m_Center: {x: 0, y: 0.000001907349, z: 9.763948}
 --- !u!1 &8143288655788748192
 GameObject:
   m_ObjectHideFlags: 0
