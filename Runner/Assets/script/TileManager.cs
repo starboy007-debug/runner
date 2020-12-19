@@ -6,10 +6,10 @@ public class TileManager : MonoBehaviour
 {
     public GameObject[] Tileprefabs;
     private Transform Playertransform;
-    private float Spawnz = -19.0f;
-    private float TileLength = 46.0f;
-    private float Safezone = 26.0f;
-    private int amountoftile = 3;
+    private float Spawnz = -10.0f;
+    private float TileLength = 60.0f;
+    private float Safezone = 40.0f;
+    private int amountoftile = 4;
     private int LastprefabIndex = 0;
     private List<GameObject> activeTiles;
 
