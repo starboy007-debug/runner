@@ -11,11 +11,14 @@ public class Score : MonoBehaviour
     private int maxDifficultlevel = 10;
     private int scoreTonextlevel = 10;
     private bool isdeath = false;
+    private int coinscore;
 
     public Deathmenu deathmenu;
     public Text scoretext;
+    public Text cointext;
     void Update()
     {
+
         if (isdeath)
             return;
         if(score > scoreTonextlevel)
@@ -24,6 +27,9 @@ public class Score : MonoBehaviour
         }
         score += Time.deltaTime * Difficultlevel;
         scoretext.text = ((int)score).ToString();
+
+        coinscore = Coin.currentCoin;
+        cointext.text = ((int)coinscore).ToString();
     }
 
     private void LevelUp()

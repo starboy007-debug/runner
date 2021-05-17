@@ -14,6 +14,7 @@ public class PlayerMotor : MonoBehaviour
     private float Starttime;
     Animator anim;
     bool isjump = false;
+    public static int coins = 0;
 
     void Start()
     {
@@ -98,8 +99,12 @@ public class PlayerMotor : MonoBehaviour
             anim.SetInteger("condition", 2);
             StartCoroutine(Death());
         }
-            
-            
+
+        if (hit.gameObject.tag == "Coin")
+        {
+            coins += 1;
+        }
+
     }
 
     IEnumerator Death()
